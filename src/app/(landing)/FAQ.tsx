@@ -9,7 +9,7 @@ export default function FAQ() {
                 <Question q="What is a hackathon?">
                     Hackathons are where your crazy idea becomes reality. Students work in teams of up to four for 24
                     hours to create something amazing. Build anything — there are no restrictions on what you can create.
-                    Dive in and make the most incredible thing you can alongside fellow creators.
+                    Dive in and make the most incredible thing you can alongside fellow peers.
                 </Question>
                 <Question q="Who can attend?">
                     Any PAUSD student can attend GunnHacks. Unfortunately, we cannot allow college or out-of-district
