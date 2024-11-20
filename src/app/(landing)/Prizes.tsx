@@ -53,7 +53,7 @@ export default function Prizes() {
     return (
         <Section red title="Prizes" id="prizes">
             <div className="flex justify-center items-center h-64">
-                <h2 className="text-3xl font-bold text-gray-600">Coming Soon</h2>
+                <h2 className="text-3xl font-bold text-white-600">Coming Soon</h2>
             </div>
         </Section>
     );
