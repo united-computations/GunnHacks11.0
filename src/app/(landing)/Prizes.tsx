@@ -52,6 +52,16 @@ const miniEventPrizes = [{
 export default function Prizes() {
     return (
         <Section red title="Prizes" id="prizes">
+            <div className="flex justify-center items-center h-64">
+                <h2 className="text-3xl font-bold text-gray-600">Coming Soon</h2>
+            </div>
+        </Section>
+    );
+}
+
+/* export default function Prizes() {
+    return (
+        <Section red title="Prizes" id="prizes">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {mainPrizes.map(prize => (
                     <div key={prize.name}>
@@ -75,7 +85,7 @@ export default function Prizes() {
             </div>
         </Section>
     );
-}
+} */
 
 function Prize(props: {children: ReactNode}) {
     return (
