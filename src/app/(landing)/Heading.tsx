@@ -9,14 +9,15 @@ const overpass = Overpass({
 });
 
 const msToTime = (time: number) => {
-    let ms = String(time % 1000).padStart(3, '0');
-    time = Math.floor(time / 1000);
-    let sec = String(time % 60).padStart(2, '0');
-    time = Math.floor(time / 60);
-    let min = String(time % 60).padStart(2, '0');
-    time = Math.floor(time / 60);
-    let hours = String(time).padStart(2, '0');
-    return `${hours / 24} days ${hours % 24} hours ${min} minutes and ${sec} seconds`;
+    const ms = time % 1000;
+    time = Math.floor(time / 1000); // Convert to seconds
+    const sec = time % 60;
+    time = Math.floor(time / 60); // Convert to minutes
+    const min = time % 60;
+    time = Math.floor(time / 60); // Convert to hours
+    const hours = time % 24;
+    const days = Math.floor(time / 24); // Convert to days
+    return `${days} days, ${hours} hours, ${min} minutes, and ${sec} seconds`;
 };
 
 export default function Heading() {
@@ -25,10 +26,10 @@ export default function Heading() {
 
     useEffect(() => {
         setTime(new Date().getTime());
-        const inv = setInterval(() => {
+        const interval = setInterval(() => {
             setTime(new Date().getTime());
         }, 100);
-        return () => clearInterval(inv);
+        return () => clearInterval(interval);
     }, []);
 
     return (
@@ -55,14 +56,17 @@ export default function Heading() {
                 </div>
             </div>
             <div className="mt-10 px-16 py-4 text-2xl font-bold">
-                {time && (time < END ? `The hacking period will start in ${msToTime(END - time)}.` : `The hacking period has started.`)}
+                {time !== null
+                    ? time < END
+                        ? `The hacking period will start in ${msToTime(END - time)}.`
+                        : `The hacking period has started.`
+                    : `Loading...`}
             </div>
             <div className="text-2xl mt-3 flex gap-2 items-center">
                 <span className="text-[#F47722] text-5xl">[</span>
                 <a href="https://forms.gle/5JebCYpeFf2eErzY8" rel="noopener noreferrer" target="_blank">Register Here</a>
                 <span className="text-[#F47722] text-5xl">]</span>
             </div>
-            
         </section>
     );
 }
