@@ -40,7 +40,7 @@ export default function Heading() {
                 <div className="ml-3 md:mt-[-.5rem] flex flex-col items-center md:block">
                     <p className="mb-2 w-96 text-base mt-16 md:mt-0 md:text-left">
                         Make, Build, Create & Learn. It’s GunnHacks 11.0, Gunn’s 24‑hour high school hackathon!<br />
-                        January 25-26, 2025 | Gunn High School.<br />
+                        January 25-26, 2025 | Gunn High School Library<br />
                     </p>
                     <div className="flex gap-4 text-2xl">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/gunn.hacks/" aria-label="Instagram">
