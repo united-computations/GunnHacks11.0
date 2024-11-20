@@ -46,11 +46,11 @@ export default function FAQ() {
                 {/* <Question q="Where is GunnHacks?">
                     GunnHacks 9.0 will be held in-person at the Gunn library.
                 </Question> */}
-                <Question q="When does registration close?">
+                {/*<Question q="When does registration close?">
                     Registration will close on January 20th, 2024 at 11:59pm PST.
-                    {/* Registration for GunnHacks 10.0 is not open yet. You can be notified through our information channels
-                    such as our Discord server. */}
-                </Question>
+                    Registration for GunnHacks 10.0 is not open yet. You can be notified through our information channels
+                    such as our Discord server.
+                </Question>*/}
                 {/*
                 <Question q="What do I need to submit?">
                     You need to submit a DevPost project to https://gunnhacks8.devpost.com that includes a
