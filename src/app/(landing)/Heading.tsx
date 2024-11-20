@@ -25,7 +25,7 @@ const msToTime = (time: number) => {
 export default function Heading() {
 
     const [ time, setTime ] = useState<null|number>(null);
-    const END = new Date('2024-01-28T15:00:00').getTime();
+    const END = new Date('2025-01-26T15:00:00').getTime();
 
     useEffect(() => {
         setTime(new Date().getTime());
@@ -44,8 +44,8 @@ export default function Heading() {
 
                 <div className="ml-3 md:mt-[-.5rem] flex flex-col items-center md:block">
                     <p className="mb-2 w-96 text-base mt-16 md:mt-0 md:text-left">
-                        {/* Make, Build, Create & Learn. It’s GunnHacks 10.0, Gunn’s 24‑hour high school hackathon! */}
-                        January 27-28, 2024 | Gunn High School.<br />
+                        Make, Build, Create & Learn. It’s GunnHacks 11.0, Gunn’s 24‑hour high school hackathon!<br>
+                        January 25-26, 2025 | Gunn High School.<br />
                     </p>
 
                     <div className="flex gap-4 text-2xl">
@@ -73,14 +73,14 @@ export default function Heading() {
 
             <div className='text-2xl mt-3 flex gap-2 items-center'>
                 <span className='text-[#F47722] text-5xl'>[</span>
-                <a href="https://docs.google.com/document/d/1RHcsMJANFuJC4UyZ3ECxpfC0QOi8cvSeZquez7P1Ahg/edit" rel="noopener noreferrer" target="_blank">Hacker Guide</a>
+                <a href="https://forms.gle/5JebCYpeFf2eErzY8" rel="noopener noreferrer" target="_blank">Register Here</a>
                 <span className='text-[#F47722] text-5xl'>]</span>
             </div>
-            {/* <strong className="text-xl mb-4">January 21-22, 2023</strong> */}
+            <strong className="text-xl mb-4">January 25-26, 2025</strong>
 
-            <a id="mlh-trust-badge" style={{ display: "block", maxWidth:"100px", minWidth:"60px", position:"fixed", right:"50px", top:0, width:"10%", zIndex:10000, filter: "drop-shadow(0px 9px 12px #00000055)" }} href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white" target="_blank">
+            {/*<a id="mlh-trust-badge" style={{ display: "block", maxWidth:"100px", minWidth:"60px", position:"fixed", right:"50px", top:0, width:"10%", zIndex:10000, filter: "drop-shadow(0px 9px 12px #00000055)" }} href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white" target="_blank">
                 <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg" alt="Major League Hacking 2024 Hackathon Season" style={{width: "100%"}} />
-            </a>
+            </a>*/}
 
             
         </section>
