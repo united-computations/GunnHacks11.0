@@ -9,19 +9,19 @@ export default function About() {
     return (
         <Section title="About" id="about">
 
-            <div className="text-xl">I am a hackathon
+            <div className="text-xl">Have no clue who I am?
                 <div className="flex gap-5 my-3">
                     <div 
                         className={"flex-1 p-3 rounded-lg cursor-pointer border-2 " + (status === 'B' ? 'border-transparent bg-slate-200' : 'border-solid border-slate-200')}
                         onClick={() => setStatus('B')}
                     >
-                        Beginner
+                        I'm a Beginner Coder
                     </div>
                     <div 
                         className={"flex-1 p-3 rounded-lg cursor-pointer border-2 " + (status === 'V' ? 'border-transparent bg-slate-200' : 'border-solid border-slate-200')}
                         onClick={() => setStatus('V')}
                     >
-                        Veteran
+                        I'm a Veteran Coder
                     </div>
                 </div>
             </div>
@@ -39,31 +39,31 @@ export default function About() {
 
 const Beginner = () => {
     return <div className='text-lg'>
-        <p className="mb-4">Make, Build, Create & Learn. Join GunnHaX, the tenth iteration of Gunn’s annual hackathon!</p>
+        <p className="mb-4">Make, Build, Create & Learn. Join GunnHaXI, the eleventh iteration of Gunn’s annual hackathon!</p>
 
         <p className="mb-4">
             In a hackathon, participants compete in teams to create a programming project within a given time limit. At the end, projects are then
-            rated by a panel of judges, and the winners get prizes! At GunnHaX, the project can be anything, from games to data visualization
-            to AI-powered assistants. GunnHacks welcomes beginner coders&#8212;there will be several coding workshops, from basic programming to
-            web development and AI, to help get beginners started. Our experienced staff will also be available to offer technical help and advice.
-            All you need to get started is an idea!
+            rated by a panel of judges, and the winners get cool swags and prizes! At GunnHaXI, the project can literally be anything, from games to data visualization,
+            from Discord bots to AI-powered assistants. GunnHacks welcomes all beginner coders with varying coding experiences (or even none!)&#8212;there will be several coding workshops, from basic programming to
+            web development and AI, to help you get started. Our experienced staff will also be available to offer technical help and advice.
+            All you need to get started is an idea, and what you can do is just limited by your imagination!
         </p>
 
         <p className="mb-4">
             GunnHaX is a 24-hour event, which means participants are given a 24-hour time frame to complete your project. (Of course, most participants 
             sleep a little.) At the end, participants will give a quick presentation and their project will be rated in 4 categories: technical difficulty,
-            practicality, creativity, and user experience. The best projects in each category, as well as overall, will win prizes. The best beginner teams
-            will also win prizes!
+            practicality, creativity, and user experience. The best projects in each category, as well as overall, will win prizes. A special prize is also reserved
+            for he best beginner teams!
         </p>
 
         <p className="mb-4">
-            GunnHaX is a great opportunity for beginners to learn and become acquainted with coding. It’s a lot of fun, too, with a host of mini-events
+            GunnHaXI is a great opportunity for beginners to learn and become acquainted with coding. It’s a lot of fun, too, with a host of mini-events
             throughout the night. So whether you’re a programming veteran or someone who has never touched a line of code before, we invite you to join!
             The registration link is <a href="/register">here</a>. (Only PAUSD students are allowed to participate at this time.)
         </p>
         
         <p className="mb-4">
-            GunnHaX is dedicated to an inclusive experience for all. All hackers are expected to follow MLH's <a href="http://hackp.ac/coc" target="_blank" rel="noopener noreferrer">Code of Conduct</a>.
+            GunnHaXI is dedicated to an inclusive experience for all. All hackers are expected to follow the <a href="/conduct" target="_blank" rel="noopener noreferrer">GunnHacks Code of Conduct</a>.
         </p>
 
     </div>
@@ -81,7 +81,7 @@ const Veteran = () => {
         </p>
         <p className="mb-4">
             Registration is open for PAUSD students! Register for GunnHacks <a href="/register">here</a>.
-            All hackers are also expected to follow MLH's <a href="http://hackp.ac/coc" target="_blank" rel="noopener noreferrer">Code of Conduct</a>.
+            All hackers are also expected to follow the <a href="/conduct" target="_blank" rel="noopener noreferrer">GunnHacks Code of Conduct</a>.
         </p>
     </div>
 }
