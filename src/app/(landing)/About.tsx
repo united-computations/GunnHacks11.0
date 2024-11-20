@@ -9,7 +9,7 @@ export default function About() {
     return (
         <Section title="About" id="about">
 
-            <div className="text-xl">Have no clue who I am?
+            <div className="text-xl">I am a hackathon
                 <div className="flex gap-5 my-3">
                     <div 
                         className={"flex-1 p-3 rounded-lg cursor-pointer border-2 " + (status === 'B' ? 'border-transparent bg-slate-200' : 'border-solid border-slate-200')}
