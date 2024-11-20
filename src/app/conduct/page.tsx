@@ -6,10 +6,10 @@ export const metadata: Metadata = {
 }
 
 export default function Register() {
-    // redirect("https://docs.google.com/forms/d/e/1FAIpQLScVPB66QN6VdTLCzdj91xYIkH0RGDLeJ_gAU7V6TYRIrG1dRw/viewform");
-    return (
-       <div className="flex justify-center mt-12 text-white text-5xl">
-            Coming soon...
-        </div>
-    )
+    redirect("https://docs.google.com/document/d/e/2PACX-1vRV7AHc6eftjfLNjDAVeSo33rkgmD9E37tj9sFDsEAnKrLxFzX-KFZY6ajFEZxbQZmO_l_3KNaR0Wm3/pub");
+    // return (
+    //    <div className="flex justify-center mt-12 text-white text-5xl">
+    //         Coming soon...
+    //     </div>
+    // )
 }
