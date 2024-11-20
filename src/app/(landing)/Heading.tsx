@@ -16,12 +16,12 @@ const msToTime = (time: number) => {
     let min = String(time % 60).padStart(2, '0');
     time = Math.floor(time / 60);
     let hours = String(time).padStart(2, '0');
-    return `${hours} : ${min} : ${sec}`;
+    return `${hours / 24} days ${hours % 24} hours ${min} minutes and ${sec} seconds`;
 };
 
 export default function Heading() {
     const [time, setTime] = useState<null | number>(null);
-    const END = new Date('2025-01-26T15:00:00').getTime();
+    const END = new Date('2025-01-25T15:00:00').getTime();
 
     useEffect(() => {
         setTime(new Date().getTime());
@@ -34,7 +34,7 @@ export default function Heading() {
     return (
         <section id="heading" className="text-white text-center h-screen relative flex flex-col items-center justify-center p-5 pb-[20vh]">
             <div className={`mb-2 relative flex flex-col items-center md:block ${overpass.className}`}>
-                <span className="pt-2 text-6xl md:text-9xl tracking-wider">GunnHacks 11.0<span className="invisible">XX</span></span>
+                <span className="pt-2 text-6xl md:text-9xl tracking-wider">GunnHa<span className="invisible">XI</span></span>
                 <img className="absolute w-32 md:w-64 left-[15rem] top-[-1.6rem] md:left-[calc(26rem)] md:top-[-2.9rem]" src="/X.svg" alt="X Logo" />
                 <div className="ml-3 md:mt-[-.5rem] flex flex-col items-center md:block">
                     <p className="mb-2 w-96 text-base mt-16 md:mt-0 md:text-left">
@@ -55,14 +55,14 @@ export default function Heading() {
                 </div>
             </div>
             <div className="mt-10 px-16 py-4 text-2xl font-bold">
-                {time && (time < END ? `The hacking period will end in ${msToTime(END - time)}.` : `The hacking period has ended.`)}
+                {time && (time < END ? `The hacking period will start in ${msToTime(END - time)}.` : `The hacking period has started.`)}
             </div>
             <div className="text-2xl mt-3 flex gap-2 items-center">
                 <span className="text-[#F47722] text-5xl">[</span>
                 <a href="https://forms.gle/5JebCYpeFf2eErzY8" rel="noopener noreferrer" target="_blank">Register Here</a>
                 <span className="text-[#F47722] text-5xl">]</span>
             </div>
-            <strong className="text-xl mb-4">January 25-26, 2025</strong>
+            
         </section>
     );
 }
