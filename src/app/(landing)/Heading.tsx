@@ -22,7 +22,8 @@ const msToTime = (time: number) => {
 
 export default function Heading() {
     const [time, setTime] = useState<null | number>(null);
-    const END = new Date('2025-01-25T15:00:00').getTime();
+    const START = new Date('2025-01-25T15:00:00').getTime();
+    const END = new Date('2025-01-26T15:00:00').getTime();
 
     useEffect(() => {
         setTime(new Date().getTime());
@@ -40,7 +41,7 @@ export default function Heading() {
                 <div className="ml-3 md:mt-[-.5rem] flex flex-col items-center md:block">
                     <p className="mb-2 w-96 text-base mt-16 md:mt-0 md:text-left">
                         Make, Build, Create & Learn. It’s GunnHacks 11.0, Gunn’s 24‑hour high school hackathon!<br />
-                        January 25-26, 2025 | Gunn High School Library<br />
+                        January 25-26, 2025 | <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/rjAXwNZZnwSzQrLW8">Gunn High School Library</a><br />
                     </p>
                     <div className="flex gap-4 text-2xl">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/gunn.hacks/" aria-label="Instagram">
@@ -57,9 +58,11 @@ export default function Heading() {
             </div>
             <div className="mt-10 px-16 py-4 text-2xl font-bold">
                 {time !== null
-                    ? time < END
-                        ? `The hacking period will start in ${msToTime(END - time)}.`
-                        : `The hacking period has started.`
+                    ? time < START
+                        ? `The hacking period will start in ${msToTime(START - time)}.`
+                        : time < END
+                        ? `The hacking period has started and will end in ${msToTime(END - time)}.`
+                        : `The hacking period has ended.`
                     : `Loading...`}
             </div>
             <div className="text-2xl mt-3 flex gap-2 items-center">
