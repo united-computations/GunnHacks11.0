@@ -11,7 +11,7 @@ export default function Sponsors() {
             </p>
 
             <div className="pt-8 pb-2 flex flex-wrap gap-x-5 gap-y-2 items-center justify-center">
-                <Sponsor href="https://www.desmos.com/" src="/sponsors/DesmosLog-B.svg" alt="Desmos" />
+                <Sponsor href="https://www.desmos.com/" src="/sponsors/DesmosLogo-B.svg" alt="Desmos" />
                 {/*<Sponsor href="https://www.applied-computing.org/" src="/sponsors/ACF.png" alt="Applied Computing Foundation" />
                 <Sponsor href="https://gen.xyz/" src="/sponsors/XYZ.svg" alt="XYZ" />
                 <Sponsor href="https://www.janestreet.com/" src="/sponsors/jane-street.png" alt="Jane Street" />
