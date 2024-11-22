@@ -22,7 +22,7 @@ const msToTime = (time: number) => {
     if (days > 0) parts.push(`${days} day${days > 1 ? 's' : ''}`);
     if (hours > 0) parts.push(`${hours} hour${hours > 1 ? 's' : ''}`);
     if (min > 0) parts.push(`${min} minute${min > 1 ? 's' : ''}`);
-    if (sec > 0) parts.push(`${sec} second${sec > 1 ? 's' : ''}`);
+    if (sec >= 0) parts.push(`${sec} second${sec > 1 ? 's' : ''}`);
 
     return parts.join(', ');
 };
@@ -46,7 +46,7 @@ export default function Heading() {
                 <span className="pt-2 text-6xl md:text-9xl tracking-wider">GunnHa<span className="invisible">XI</span></span>
                 <img className="absolute w-32 md:w-64 left-[15rem] top-[-1.6rem] md:left-[calc(26rem)] md:top-[-2.9rem]" src="/X.svg" alt="X Logo" />
                 <div className="ml-3 md:mt-[-.5rem] flex flex-col items-center md:block">
-                    <p className="mb-2 w-96 text-base mt-16 md:mt-0 md:text-left">
+                    <p className="mb-2 w-96 text-base mt-16 md:mt-0 md:text-left gradient-text">
                         Make, Build, Create & Learn. It’s GunnHacks 11.0, Gunn’s 24‑hour high school hackathon!<br />
                         January 25-26, 2025 | <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/rjAXwNZZnwSzQrLW8">Gunn High School Library</a><br />
                     </p>
@@ -74,7 +74,7 @@ export default function Heading() {
             </div>
             <div className="text-2xl mt-3 flex gap-2 items-center">
                 <span className="text-[#F47722] text-5xl">[</span>
-                <a href="https://forms.gle/5JebCYpeFf2eErzY8" rel="noopener noreferrer" target="_blank">Register Here</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScVPB66QN6VdTLCzdj91xYIkH0RGDLeJ_gAU7V6TYRIrG1dRw/viewform" rel="noopener noreferrer" target="_blank">Register Here</a>
                 <span className="text-[#F47722] text-5xl">]</span>
             </div>
         </section>
