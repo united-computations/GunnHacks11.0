@@ -17,7 +17,14 @@ const msToTime = (time: number) => {
     time = Math.floor(time / 60); // Convert to hours
     const hours = time % 24;
     const days = Math.floor(time / 24); // Convert to days
-    return `${days} days, ${hours} hours, ${min} minutes, and ${sec} seconds`;
+
+    const parts = [];
+    if (days > 0) parts.push(`${days} day${days > 1 ? 's' : ''}`);
+    if (hours > 0) parts.push(`${hours} hour${hours > 1 ? 's' : ''}`);
+    if (min > 0) parts.push(`${min} minute${min > 1 ? 's' : ''}`);
+    if (sec > 0) parts.push(`${sec} second${sec > 1 ? 's' : ''}`);
+
+    return parts.join(', ');
 };
 
 export default function Heading() {
