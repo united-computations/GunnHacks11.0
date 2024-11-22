@@ -36,14 +36,13 @@ export default function Heading() {
     const typedRef = useRef<HTMLSpanElement>(null);
 
     useEffect(() => {
-        // Dynamic script loader for Typed.js
         const script = document.createElement("script");
         script.src = "https://cdn.jsdelivr.net/npm/typed.js@2.0.12";
         script.async = true;
 
         script.onload = () => {
-            if (typeof window.Typed !== "undefined" && typedRef.current) {
-                const typed = new window.Typed(typedRef.current, {
+            if (typedRef.current && typeof window.Typed !== "undefined") {
+                const typed = new (window as any).Typed(typedRef.current, {
                     strings: [
                         "Make, Build, Create & Learn.",
                         "It’s GunnHacks 11.0.",
@@ -55,13 +54,15 @@ export default function Heading() {
                     loop: true,
                 });
 
-                return () => typed.destroy(); // Cleanup on unmount
+                // Cleanup Typed instance on component unmount
+                return () => typed.destroy();
             }
         };
 
         document.body.appendChild(script);
 
         return () => {
+            // Clean up script
             document.body.removeChild(script);
         };
     }, []);
