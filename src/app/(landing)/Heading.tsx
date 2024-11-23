@@ -2,7 +2,7 @@
 import { Overpass } from '@next/font/google';
 import { RiInstagramFill, RiDiscordFill } from 'react-icons/ri';
 import { FaEnvelope } from 'react-icons/fa';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const overpass = Overpass({
     subsets: ['latin']
@@ -32,41 +32,6 @@ export default function Heading() {
     const START = new Date('2025-01-25T15:00:00').getTime();
     const END = new Date('2025-01-26T15:00:00').getTime();
 
-    // Reference for the typewriter effect
-    const typedRef = useRef<HTMLSpanElement>(null);
-
-    useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "https://cdn.jsdelivr.net/npm/typed.js@2.0.12";
-        script.async = true;
-
-        script.onload = () => {
-            if (typedRef.current && typeof window.Typed !== "undefined") {
-                const typed = new (window as any).Typed(typedRef.current, {
-                    strings: [
-                        "Make, Build, Create & Learn.",
-                        "It’s GunnHacks 11.0.",
-                        "Gunn’s 24-hour high school hackathon!",
-                    ],
-                    typeSpeed: 50,
-                    backSpeed: 25,
-                    backDelay: 1500,
-                    loop: true,
-                });
-
-                // Cleanup Typed instance on component unmount
-                return () => typed.destroy();
-            }
-        };
-
-        document.body.appendChild(script);
-
-        return () => {
-            // Clean up script
-            document.body.removeChild(script);
-        };
-    }, []);
-
     useEffect(() => {
         setTime(new Date().getTime());
         const interval = setInterval(() => {
@@ -82,10 +47,8 @@ export default function Heading() {
                 <img className="absolute w-32 md:w-64 left-[15rem] top-[-1.6rem] md:left-[calc(26rem)] md:top-[-2.9rem]" src="/X.svg" alt="X Logo" />
                 <div className="ml-3 md:mt-[-.5rem] flex flex-col items-center md:block">
                     <p className="mb-2 w-96 text-base mt-16 md:mt-0 md:text-left gradient-text">
-                        <span ref={typedRef}></span>
-                        <br />
-                        January 25-26, 2025 | <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/rjAXwNZZnwSzQrLW8">Gunn High School Library</a>
-                        <br />
+                        Make, Build, Create & Learn. It’s GunnHacks 11.0, Gunn’s 24‑hour high school hackathon!<br />
+                        January 25-26, 2025 | <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/rjAXwNZZnwSzQrLW8">Gunn High School Library</a><br />
                     </p>
                     <div className="flex gap-4 text-2xl">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/gunn.hacks/" aria-label="Instagram">
