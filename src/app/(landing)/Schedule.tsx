@@ -9,7 +9,7 @@ export default function Schedule() {
                     <ScheduleItem start="1:30 PM">Doors Open</ScheduleItem>
                     <ScheduleItem start="2:00 PM" end="2:30 PM">Opening Ceremony</ScheduleItem>
                     <ScheduleItem start="2:30 PM" end="3:00 PM">Team Formation</ScheduleItem>
-                    <ScheduleItem start="3:00 PM" bold style={{ backgroundColor: 'rgba(244, 119, 34, 0.3)' }}>Hacking Begins</ScheduleItem>
+                    <ScheduleItem start="3:00 PM" bold>Hacking Begins</ScheduleItem>
                     <ScheduleItem start="3:15 PM" end="4:45 PM">Intro to Code / Web Development Workshop</ScheduleItem>
                     <ScheduleItem start="5:00 PM" end="6:30 PM">Basic AI and ML / Game Dev in Python Workshop</ScheduleItem>
                     <ScheduleItem start="6:30 PM">Dinner</ScheduleItem>
@@ -22,7 +22,7 @@ export default function Schedule() {
                     <ScheduleItem start="8:00 AM">Breakfast</ScheduleItem>
                     <ScheduleItem start="10:00 AM" end="10:30 AM">Programming-themed Skribbl.io</ScheduleItem>
                     <ScheduleItem start="12:00 PM">Lunch</ScheduleItem>
-                    <ScheduleItem start="3:00 PM" bold style={{ backgroundColor: 'rgba(244, 119, 34, 0.3)' }}>Hacking Ends</ScheduleItem>
+                    <ScheduleItem start="3:00 PM" bold>Hacking Ends</ScheduleItem>
                     <ScheduleItem start="3:00 PM" end="5:00 PM">Presentations & Demos (Judging)</ScheduleItem>
                     <ScheduleItem start="4:00 PM" end="4:45 PM">Code Golf</ScheduleItem>
                     <ScheduleItem start="5:00 PM" end="5:30 PM">Awards & Closing Ceremony</ScheduleItem>
