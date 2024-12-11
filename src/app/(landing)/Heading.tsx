@@ -85,8 +85,17 @@ export default function Heading() {
                 0% {
                   transform: scale(1) rotate(0deg);
                 }
-                50% {
+                3% {
                   transform: scale(1.2) rotate(10deg);
+                }
+                6% {
+                  transform: scale(1) rotate(0deg);
+                }
+                9% {
+                  transform: scale(0.8) rotate(-10deg);
+                }
+                12% {
+                  transform: scale(1) rotate(0deg);
                 }
                 100% {
                   transform: scale(1) rotate(0deg);
