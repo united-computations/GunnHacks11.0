@@ -27,6 +27,31 @@ const msToTime = (time: number) => {
     return parts.join(', ');
 };
 
+const RegisterLink = () => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const link = document.getElementById("register-link");
+      if (link) {
+        link.classList.add("wobble");
+      }
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <a
+      id="register-link"
+      href="https://docs.google.com/forms/d/e/1FAIpQLScVPB66QN6VdTLCzdj91xYIkH0RGDLeJ_gAU7V6TYRIrG1dRw/viewform"
+      rel="noopener noreferrer"
+      target="_blank"
+      className="wobble"
+    >
+      Register Here
+    </a>
+  );
+};
+
 export default function Heading() {
     const [time, setTime] = useState<null | number>(null);
     const START = new Date('2025-01-25T15:00:00').getTime();
@@ -75,42 +100,42 @@ export default function Heading() {
             </div>
             <div className="text-4xl font-bold mt-3 flex gap-2 items-center">
                 <span className="text-[#F47722] text-5xl">[</span>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScVPB66QN6VdTLCzdj91xYIkH0RGDLeJ_gAU7V6TYRIrG1dRw/viewform" rel="noopener noreferrer" target="_blank" className="wobble">Register Here</a>
+                <RegisterLink />
                 <span className="text-[#F47722] text-5xl">]</span> 
                 <span className="text-5xl animate-wiggle ml-2">👈</span>
             </div>
 
             <style jsx>{`
               @keyframes wobble {
-                0% {
-                  transform: none;
+                  0% {
+                    transform: none;
+                  }
+                  15% {
+                    transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -2deg);
+                  }
+                  30% {
+                    transform: translate3d(8%, 0, 0) rotate3d(0, 0, 1, 1.5deg);
+                  }
+                  45% {
+                    transform: translate3d(-6%, 0, 0) rotate3d(0, 0, 1, -1.5deg);
+                  }
+                  60% {
+                    transform: translate3d(4%, 0, 0) rotate3d(0, 0, 1, 1deg);
+                  }
+                  75% {
+                    transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -0.5deg);
+                  }
+                  100% {
+                    transform: none;
+                  }
                 }
-                15% {
-                  transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+                
+                .wobble {
+                  display: inline-block;
+                  animation: wobble 0.8s linear infinite;
+                  transform-origin: 50% 100%;
                 }
-                30% {
-                  transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-                }
-                45% {
-                  transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-                }
-                60% {
-                  transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-                }
-                75% {
-                  transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-                }
-                100% {
-                  transform: none;
-                }
-              }
-            
-              .wobble {
-                display: inline-block;
-                animation: wobble 0.8s linear infinite;
-                transform-origin: 50% 100%;
-              }
-              
+
               @keyframes wiggle {
                 0% {
                   transform: translateX(0);
