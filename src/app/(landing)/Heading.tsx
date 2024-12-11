@@ -75,39 +75,40 @@ export default function Heading() {
             </div>
             <div className="text-4xl font-bold mt-3 flex gap-2 items-center">
                 <span className="text-[#F47722] text-5xl">[</span>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScVPB66QN6VdTLCzdj91xYIkH0RGDLeJ_gAU7V6TYRIrG1dRw/viewform" rel="noopener noreferrer" target="_blank" className="animated-link">Register Here</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScVPB66QN6VdTLCzdj91xYIkH0RGDLeJ_gAU7V6TYRIrG1dRw/viewform" rel="noopener noreferrer" target="_blank" className="wobble">Register Here</a>
                 <span className="text-[#F47722] text-5xl">]</span> 
                 <span className="text-5xl animate-wiggle ml-2">👈</span>
             </div>
 
             <style jsx>{`
-              @keyframes slant-wiggle {
+              @keyframes wobble {
                 0% {
-                  transform: scale(1) rotate(0deg);
+                  transform: none;
                 }
-                50% {
-                  transform: scale(1) rotate(0deg);
+                15% {
+                  transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
                 }
-                52% {
-                  transform: scale(1.2) rotate(6deg);
+                30% {
+                  transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
                 }
-                54% {
-                  transform: scale(1) rotate(0deg);
+                45% {
+                  transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
                 }
-                56% {
-                  transform: scale(0.8) rotate(-6deg);
+                60% {
+                  transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
                 }
-                58% {
-                  transform: scale(1) rotate(0deg);
+                75% {
+                  transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
                 }
                 100% {
-                  transform: scale(1) rotate(0deg);
+                  transform: none;
                 }
               }
             
-              .animated-link {
+              .wobble {
                 display: inline-block;
-                animation: slant-wiggle 5s ease-in-out infinite;
+                animation: wobble 0.8s linear infinite;
+                transform-origin: 50% 100%;
               }
               
               @keyframes wiggle {
