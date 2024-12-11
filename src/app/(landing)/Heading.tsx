@@ -44,7 +44,7 @@ export default function Heading() {
         <section id="heading" className="text-white text-center h-screen relative flex flex-col items-center justify-center p-5 pb-[20vh]">
             <div className={`mb-2 relative flex flex-col items-center md:block ${overpass.className}`}>
                 <span className="pt-2 text-6xl md:text-9xl tracking-wider"><img src="/gunnhacks11-dark.png" alt="GunnHacks 11.0 Logo" draggable="false" /></span>
-                <br />
+                <span className="text-lg">{/* The break itself takes the text size */}<br /></span>
                 {/*<span className="pt-2 text-6xl md:text-9xl tracking-wider">GunnHa<span className="invisible">XI</span></span>
                 <img className="absolute w-32 md:w-64 left-[15rem] top-[-1.6rem] md:left-[calc(26rem)] md:top-[-2.9rem]" src="/X.svg" alt="X Logo" />*/}
                 <div className="ml-3 md:mt-[-.5rem] flex flex-col items-center md:block">
@@ -74,11 +74,30 @@ export default function Heading() {
                         : `The hacking period has ended.`
                     : `Loading...`}
             </div>
-            <div className="text-4xl font-bold no-underline bg-white mt-3 flex gap-2 items-center">
+            <div className="text-4xl font-bold mt-3 flex gap-2 items-center">
                 <span className="text-[#F47722] text-5xl">[</span>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScVPB66QN6VdTLCzdj91xYIkH0RGDLeJ_gAU7V6TYRIrG1dRw/viewform" rel="noopener noreferrer" target="_blank">Register Here</a>
-                <span className="text-[#F47722] text-5xl">]</span>
+                <span className="text-[#F47722] text-5xl">]</span> 
+                <span className="text-5xl animate-wiggle ml-2">👈</span>
             </div>
+
+            <style jsx>{`
+              @keyframes wiggle {
+                0% {
+                  transform: translateX(0);
+                }
+                50% {
+                  transform: translateX(-5px);
+                }
+                100% {
+                  transform: translateX(0);
+                }
+              }
+            
+              .animate-wiggle {
+                animation: wiggle 0.5s ease-in-out infinite;
+              }
+            `}</style>
         </section>
     );
 }
