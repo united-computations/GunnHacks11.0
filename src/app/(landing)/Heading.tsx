@@ -111,19 +111,19 @@ export default function Heading() {
                     transform: none;
                   }
                   15% {
-                    transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -2deg);
+                    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
                   }
                   30% {
-                    transform: translate3d(8%, 0, 0) rotate3d(0, 0, 1, 1.5deg);
+                    transform: translate3d(12%, 0, 0) rotate3d(0, 0, 1, 2deg);
                   }
                   45% {
-                    transform: translate3d(-6%, 0, 0) rotate3d(0, 0, 1, -1.5deg);
+                    transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -2deg);
                   }
                   60% {
-                    transform: translate3d(4%, 0, 0) rotate3d(0, 0, 1, 1deg);
+                    transform: translate3d(8%, 0, 0) rotate3d(0, 0, 1, 1deg);
                   }
                   75% {
-                    transform: translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -0.5deg);
+                    transform: translate3d(-4%, 0, 0) rotate3d(0, 0, 1, -1deg);
                   }
                   100% {
                     transform: none;
