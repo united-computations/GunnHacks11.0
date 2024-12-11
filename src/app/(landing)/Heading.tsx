@@ -75,12 +75,29 @@ export default function Heading() {
             </div>
             <div className="text-4xl font-bold mt-3 flex gap-2 items-center">
                 <span className="text-[#F47722] text-5xl">[</span>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScVPB66QN6VdTLCzdj91xYIkH0RGDLeJ_gAU7V6TYRIrG1dRw/viewform" rel="noopener noreferrer" target="_blank">Register Here</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScVPB66QN6VdTLCzdj91xYIkH0RGDLeJ_gAU7V6TYRIrG1dRw/viewform" rel="noopener noreferrer" target="_blank" className="animated-link">Register Here</a>
                 <span className="text-[#F47722] text-5xl">]</span> 
                 <span className="text-5xl animate-wiggle ml-2">👈</span>
             </div>
 
             <style jsx>{`
+              @keyframes slant-wiggle {
+                0% {
+                  transform: scale(1) rotate(0deg);
+                }
+                50% {
+                  transform: scale(1.2) rotate(10deg);
+                }
+                100% {
+                  transform: scale(1) rotate(0deg);
+                }
+              }
+            
+              .animated-link {
+                display: inline-block;
+                animation: slant-wiggle 5s ease-in-out infinite;
+              }
+              
               @keyframes wiggle {
                 0% {
                   transform: translateX(0);
