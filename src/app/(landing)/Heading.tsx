@@ -44,7 +44,7 @@ export default function Heading() {
         <section id="heading" className="text-white text-center h-screen relative flex flex-col items-center justify-center p-5 pb-[20vh]">
             <div className={`mb-2 relative flex flex-col items-center md:block ${overpass.className}`}>
                 <span className="pt-2 text-6xl md:text-9xl tracking-wider text-center">
-                    <img className="mb-2 w-auto max-w-full ml-2 mr-2" src="/gunnhacks11-dark.png" alt="GunnHacks 11.0 Logo" draggable="false" />
+                    <img className="mb-2 w-auto max-w-full" src="/gunnhacks11-dark.png" alt="GunnHacks 11.0 Logo" draggable="false" />
                 </span>
                 {/*<span className="pt-2 text-6xl md:text-9xl tracking-wider">GunnHa<span className="invisible">XI</span></span>
                 <img className="absolute w-32 md:w-64 left-[15rem] top-[-1.6rem] md:left-[calc(26rem)] md:top-[-2.9rem]" src="/X.svg" alt="X Logo" />*/}
