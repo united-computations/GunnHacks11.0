@@ -44,7 +44,7 @@ export default function Heading() {
         <section id="heading" className="text-white text-center h-screen relative flex flex-col items-center justify-center p-5 pb-[20vh]">
             <div className={`mb-2 relative flex flex-col items-center md:block ${overpass.className}`}>
                 <span className="pt-2 text-6xl md:text-9xl tracking-wider text-center">
-                    <img className="mb-2 w-[620px] max-w-full" src="/gunnhacks11-dark.png" alt="GunnHacks 11.0 Logo" draggable="false" />
+                    <img className="mb-2 w-[650px] max-w-full" src="/gunnhacks11-dark.png" alt="GunnHacks 11.0 Logo" draggable="false" />
                 </span>
                 {/*<span className="pt-2 text-6xl md:text-9xl tracking-wider">GunnHa<span className="invisible">XI</span></span>
                 <img className="absolute w-32 md:w-64 left-[15rem] top-[-1.6rem] md:left-[calc(26rem)] md:top-[-2.9rem]" src="/X.svg" alt="X Logo" />*/}
@@ -66,7 +66,7 @@ export default function Heading() {
                     </div>
                 </div>
             </div>
-            <div className="mt-10 px-16 py-4 text-2xl font-bold">
+            <div className="mt-7 px-16 py-4 text-2xl font-bold">
                 {time !== null
                     ? time < START
                         ? `The hacking period will start in ${msToTime(START - time)}.`
@@ -92,5 +92,22 @@ export default function Heading() {
                 <span>Limited T-shirts granted on first-come-first-serve basis! Sign up before December 31 to guarantee your swag!</span>
             </div>
         </section>
+        <style jsx>{`
+            @keyframes wiggle {
+                0% {
+                  transform: translateX(0);
+                }
+                50% {
+                  transform: translateX(-5px);
+                }
+                100% {
+                  transform: translateX(0);
+                }
+            }
+            
+            .animate-wiggle {
+                animation: wiggle 0.5s ease-in-out infinite;
+            }
+      `}</style>
     );
 }
