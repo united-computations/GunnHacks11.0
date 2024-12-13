@@ -48,7 +48,7 @@ export default function Heading() {
                 </span>
                 {/*<span className="pt-2 text-6xl md:text-9xl tracking-wider">GunnHa<span className="invisible">XI</span></span>
                 <img className="absolute w-32 md:w-64 left-[15rem] top-[-1.6rem] md:left-[calc(26rem)] md:top-[-2.9rem]" src="/X.svg" alt="X Logo" />*/}
-                <div className="ml-1 md:mt-[-.5rem] flex flex-col items-center md:block">
+                <div className="ml-1 mt-[-.25rem] flex flex-col items-center md:block">
                     <p className="mb-2 w-96 text-base mt-16 md:mt-0 md:text-left gradient-text">
                         Make, Build, Create & Learn. It’s GunnHacks 11.0, Gunn’s 24‑hour high school hackathon!<br />
                         January 25-26, 2025 | <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/rjAXwNZZnwSzQrLW8">Gunn High School Library</a><br />
