@@ -46,7 +46,7 @@ export default function FAQ() {
                 <Question q="Where is GunnHacks?">
                     GunnHacks 11.0 will be held in-person at the Gunn High School library.
                 </Question>
-                <Question q="Where is GunnHacks?">
+                <Question q="When should I sign up by?">
                     We will accept registrations up to Friday 11:59PM before the event (1/16/25). However, if you would like a GunnHacks T-shirt, 
                     please sign up before 12/31/24 11:59PM, as we have limited T-shirts available. 
                     They will be granted on a first-come-first-serve basis based on registration times (with no-shows distributed after the event).
