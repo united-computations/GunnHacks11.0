@@ -43,9 +43,14 @@ export default function FAQ() {
                     No, not at all! We will have fun activities and workshops you can participate in when
                     you want to take a break.
                 </Question>
-                {/* <Question q="Where is GunnHacks?">
-                    GunnHacks 9.0 will be held in-person at the Gunn library.
-                </Question> */}
+                <Question q="Where is GunnHacks?">
+                    GunnHacks 11.0 will be held in-person at the Gunn High School library.
+                </Question>
+                <Question q="Where is GunnHacks?">
+                    We will accept registrations up to Friday 11:59PM before the event (1/16/25). However, if you would like a GunnHacks T-shirt, 
+                    please sign up before 12/31/24 11:59PM, as we have limited T-shirts available. 
+                    They will be granted on a first-come-first-serve basis based on registration times (with no-shows distributed after the event).
+                </Question>
                 {/*<Question q="When does registration close?">
                     Registration will close on January 20th, 2024 at 11:59pm PST.
                     Registration for GunnHacks 10.0 is not open yet. You can be notified through our information channels
