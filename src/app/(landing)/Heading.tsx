@@ -87,11 +87,12 @@ export default function Heading() {
                 </a>
                 <span className="text-[#F47722] text-5xl">]</span> 
                 <span className="text-5xl animate-wiggle ml-2">👈</span>
+                <span className="mt-1 text-sm italic">Limited T-shirts granted on first-come-first-serve basis! Sign up before December 31 to guarantee your swag!</span>
             </div>
 
             <style jsx>{`
               .force-width {
-                width: 600px !important;
+                width: 620px !important;
               }
 
               @keyframes wiggle {
