@@ -89,7 +89,7 @@ export default function Heading() {
                 <span className="text-5xl animate-wiggle ml-2">👈</span>
             </div>
             <div className="text-sm italic mt-2 flex gap-2 items-center"> 
-                <span>Limited T-shirts granted on first-come-first-serve basis! Sign up before December 31 to guarantee your swag!</span> 
+                <span>Limited T-shirts granted on first-come-first-serve basis! Sign up as soon as possible to guarantee your swag!</span> 
             </div>
 
             <style jsx>{`
