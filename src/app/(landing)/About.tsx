@@ -53,7 +53,7 @@ const Beginner = () => {
             GunnHaXI is a 24-hour event, which means participants are given a 24-hour time frame to complete your project. (Of course, most participants 
             sleep a little.) At the end, participants will give a quick presentation and their project will be rated in 4 categories: technical difficulty,
             practicality, creativity, and user experience. The best projects in each category, as well as overall, will win prizes. A special prize is also reserved
-            for he best beginner teams!
+            for the best beginner teams!
         </p>
 
         <p className="mb-4">
@@ -71,7 +71,7 @@ const Beginner = () => {
 
 const Veteran = () => {
     return <div className='text-lg'>
-        <p className="mb-4">Make, Build, Create & Learn. It’s GunnHacks 11.0, the tenth iteration of Gunn’s annual hackathon!</p>
+        <p className="mb-4">Make, Build, Create & Learn. It’s GunnHacks 11.0, the eleventh iteration of Gunn’s annual hackathon!</p>
 
         <p className="mb-4">
             GunnHacks is a 24-hour high school hackathon hosted by the United Computations club at Gunn High School.
