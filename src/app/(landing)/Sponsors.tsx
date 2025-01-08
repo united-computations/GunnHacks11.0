@@ -13,8 +13,8 @@ export default function Sponsors() {
                 <Sponsor href="https://www.desmos.com/" src="/sponsors/DesmosLogo-B.svg" alt="Desmos" />
                 <Sponsor href="https://www.janestreet.com/" src="/sponsors/jane-street.png" alt="Jane Street" />
                 <Sponsor href="https://www.brandingout.com/" src="/sponsors/brandingout.png" alt="Branding Out" />
-                {/*<Sponsor href="https://www.applied-computing.org/" src="/sponsors/ACF.png" alt="Applied Computing Foundation" />
                 <Sponsor href="https://gen.xyz/" src="/sponsors/XYZ.svg" alt="XYZ" />
+                {/*<Sponsor href="https://www.applied-computing.org/" src="/sponsors/ACF.png" alt="Applied Computing Foundation" />
                 <Sponsor href="https://www.hudsonrivertrading.com/" src="/sponsors/HRT.png" alt="Hudson River Trading" />
                 <Sponsor href="https://www.wolfram.com" src="/sponsors/wolfram.png" alt="Wolfram" />
                 <Sponsor href="https://mlh.io/" src="/sponsors/MLH.png" alt="MLH" width="sm" />
