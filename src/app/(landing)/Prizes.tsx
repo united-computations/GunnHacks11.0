@@ -3,15 +3,20 @@ import Section from '../../components/Section';
 
 
 const mainPrizes = [{
-    name: 'Top 3 Teams', 
+    name: 'Main Prizes', 
     value: 
     [
-        'Echo Dot', 
-        'JBL Bluetooth Speaker', 
-        'JBL Wireless Headphones'
+        'Black Headphones',
+        'Echo Dot',
+        'Speaker',
+        'Gaming Mouse',
+        'Power Bank',
+        'Cube Power Stripe',
+        '512GB USB Flash Drive',
+        'Big Enter',
     ]
 },
-{
+/* {
     name: 'Category Awards',
     value: [
         'Gaming Mice',
@@ -36,20 +41,20 @@ const mainPrizes = [{
         'Desmos Merchandise',
         'WolframAlpha Pro'
     ]
-}
+} */
 ];
 
 const miniEventPrizes = [{
     name: 'Mini Event Awards',
     value: [
-        'Cow Plush',
-        'Rubber Duck',
-        'Chess Pawn Stress Toy',
-        'Cup Keychain'
+        'Axolotl Plush',
+        'Mooshroom Cow',
+        'Stress Toy',
+        'Cup Keychains'
     ]
 }];
 
-export default function Prizes() {
+/* export default function Prizes() {
     return (
         <Section red title="Prizes" id="prizes">
             <div className="flex justify-center items-center h-64">
@@ -57,9 +62,9 @@ export default function Prizes() {
             </div>
         </Section>
     );
-}
+} */
 
-/* export default function Prizes() {
+export default function Prizes() {
     return (
         <Section red title="Prizes" id="prizes">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -85,7 +90,7 @@ export default function Prizes() {
             </div>
         </Section>
     );
-} */
+} 
 
 function Prize(props: {children: ReactNode}) {
     return (
