@@ -6,9 +6,9 @@ const mainPrizes = [{
     name: 'Top 3 Prizes', 
     value: 
     [
-        'Black Headphones',
         'Echo Dot',
-        'Speaker',
+        'Bluetooth Speaker',
+        'Wireless Headphones',
     ]
 },
 {
