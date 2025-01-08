@@ -3,29 +3,24 @@ import Section from '../../components/Section';
 
 
 const mainPrizes = [{
-    name: 'Main Prizes', 
+    name: 'Top 3 Prizes', 
     value: 
     [
         'Black Headphones',
         'Echo Dot',
         'Speaker',
+    ]
+},
+{
+    name: 'Category Awards',
+    value: [
         'Gaming Mouse',
         'Power Bank',
         'Cube Power Stripe',
         '512GB USB Flash Drive',
-        'Big Enter',
     ]
 },
 /* {
-    name: 'Category Awards',
-    value: [
-        'Gaming Mice',
-        'Power Banks',
-        '1TB USB Drives',
-        'Power Strips'
-    ]
-},
-{
     name: 'Other Awards',
     value: [
         'Massive Enter Keys',
@@ -47,6 +42,7 @@ const mainPrizes = [{
 const miniEventPrizes = [{
     name: 'Mini Event Awards',
     value: [
+        'Big Enter',
         'Axolotl Plush',
         'Mooshroom Cow',
         'Stress Toy',
