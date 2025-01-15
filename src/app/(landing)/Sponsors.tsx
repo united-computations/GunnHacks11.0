@@ -15,8 +15,11 @@ export default function Sponsors() {
                 <Sponsor href="https://gen.xyz/" src="/sponsors/XYZ.svg" alt="XYZ" />
                 <Sponsor href="https://www.mitchellparkteenservices.org/thinkfund" src="/sponsors/thinkfund.webp" alt="Think Fund" width="md" />
                 <Sponsor href="https://www.cityofpaloalto.org/" src="/sponsors/city-of-palo-alto.png" alt="City of Palo Alto" />
-                {/*<Sponsor href="https://www.applied-computing.org/" src="/sponsors/ACF.png" alt="Applied Computing Foundation" />
                 <Sponsor href="https://www.desmos.com/" src="/sponsors/DesmosLogo-B.svg" alt="Desmos" />
+                <Sponsor href="https://stanfordresearchpark.com/" src="/sponsors/SRP_Lockup_Primary_Gold_RGB.png" alt="Stanford Research Park" />
+                <Sponsor href="https://www.digipen.edu/" src="/sponsors/DigiPen.png" alt="DigiPen" />
+                {/*<Sponsor href="https://www.applied-computing.org/" src="/sponsors/ACF.png" alt="Applied Computing Foundation" />
+                
                 <Sponsor href="https://www.hudsonrivertrading.com/" src="/sponsors/HRT.png" alt="Hudson River Trading" />
                 <Sponsor href="https://www.wolfram.com" src="/sponsors/wolfram.png" alt="Wolfram" />
                 <Sponsor href="https://mlh.io/" src="/sponsors/MLH.png" alt="MLH" width="sm" />
