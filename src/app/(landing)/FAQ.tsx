@@ -11,6 +11,9 @@ export default function FAQ() {
                     hours to create something amazing. Build anything — there are no restrictions on what you can create.
                     Dive in and make the most incredible thing you can alongside fellow peers.
                 </Question>
+                <Question q="What if I can't stay overnight or need to leave in the middle?">
+                    No worries! Our only ask is to please check in with an organizer so we can accurately track who is at the event at any given time.
+                </Question>
                 <Question q="Who can attend?">
                     Any PAUSD student can attend GunnHacks. Unfortunately, we cannot allow college or out-of-district
                     students to attend this time around.
