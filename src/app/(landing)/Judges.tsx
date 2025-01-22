@@ -6,29 +6,23 @@ export default function Judges() {
     return (
         <Section title="Judges" id="judges">
             <div className="flex flex-wrap justify-center gap-10 sm:gap-16">
-                <Judge name="Gaurav Phapale">
-                    LinkedIn, Senior Software Engineering Manager
+                <Judge name="Ashly Joseph" src="/judges/Ashly Joseph.jpg">
+                    Software Engineer, Cisco Systems
                 </Judge>
-                <Judge name="Sanjay Verma" src="/judges/sanjay-verma.jpeg">
-                    Partner and Managing Director
+                <Judge name="Oren Yair" src="/judges/Oren Yair.jpeg">
+                    Technical Program Manager, Google 
                 </Judge>
-                <Judge name="Yogesh Sandhuja" src="/judges/yogesh-sandhuja.jpeg">
-                    VP Product, HERE Technologies
+                <Judge name="Jithu Paulose" src="/judges/Jithu Paulose.jpg">
+                    Cisco Systems
                 </Judge>
-                <Judge name="Ratnakar Malla" src="/judges/ratnakar-malla.jpg">
-                    Sr. Director, Oracle Health & AI
+                <Judge name="Jean-Yves Bouguet" src="/judges/Jean-Yves Bouguet.jpeg">
+                    Director of Perception, Cruise
                 </Judge>
-                <Judge name="Mohan Gummalam" src="/judges/mohan-gummalam.jpg">
-                    CEO, Hermis, Inc.
+                <Judge name="Vincent Scheib" src="/judges/Vincent Scheib.jpg">
+                    Software Engineering Manager, Google
                 </Judge>
-                <Judge name="Arpana Tiwari" src="/judges/arpana-tiwari.jpg">
-                    Director at Adobe
-                </Judge>
-                <Judge name="Anurag Singhal" src="/judges/anurag-singhal.jpg">
-                    Founder & CEO, Quattr Inc.
-                </Judge>
-                <Judge name="Timothy Herchen" src="/judges/timothy-herchen.jpg">
-                    Gunn graduate. Likes cows.
+                <Judge name="Lawrence Chang" src="/judges/Lawrence Chang.jpeg">
+                    Co-Founder, Exemplar.ai
                 </Judge>
             </div>
         </Section>
