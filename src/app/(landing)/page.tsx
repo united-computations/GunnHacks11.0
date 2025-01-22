@@ -18,7 +18,7 @@ export default function Home() {
             <FAQ />
             <Schedule />
             <Prizes />
-            {/* <Judges /> */}
+            <Judges />
             <Sponsors />
             <Footer />
         </div>
