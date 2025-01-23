@@ -1,11 +1,10 @@
 import Section from '../../components/Section';
 import Judge from './Judge';
 
-
 export default function Judges() {
     return (
         <Section title="Judges" id="judges">
-            <div className="flex flex-wrap justify-center gap-10 sm:gap-16">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-16 justify-items-center">
                 <Judge name="Ashly Joseph" src="/judges/Ashly Joseph.jpg">
                     Software Engineer, Cisco Systems
                 </Judge>
@@ -26,5 +25,5 @@ export default function Judges() {
                 </Judge>
             </div>
         </Section>
-    )
+    );
 }
