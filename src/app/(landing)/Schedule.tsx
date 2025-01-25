@@ -10,11 +10,11 @@ export default function Schedule() {
                     <ScheduleItem start="2:00 PM" end="2:30 PM">Opening Ceremony</ScheduleItem>
                     <ScheduleItem start="2:30 PM" end="3:00 PM">Team Formation</ScheduleItem>
                     <ScheduleItem start="3:00 PM" bold>Hacking Begins</ScheduleItem>
-                    <ScheduleItem start="3:15 PM" end="4:45 PM">Intro to Code / Web Development Workshop</ScheduleItem>
-                    <ScheduleItem start="5:00 PM" end="6:30 PM">Basic AI and ML / Game Dev in Python Workshop</ScheduleItem>
+                    <ScheduleItem start="3:00 PM" end="4:30 PM">Intro to Code Workshop</ScheduleItem>
+                    <ScheduleItem start="4:45 PM" end="6:15 PM">Basic AI and ML // Web-scraping Workshop</ScheduleItem>
                     <ScheduleItem start="6:30 PM">Dinner</ScheduleItem>
                     <ScheduleItem start="7:00 PM" end="7:30 PM">Coding Trivia Kahoot</ScheduleItem>
-                    <ScheduleItem start="7:30 PM" end="9:00 PM">Web-scraping / Discord Bots Workshop</ScheduleItem>
+                    <ScheduleItem start="7:45 PM" end="9:15 PM">Web Development // Discord Bots Workshop</ScheduleItem>
                     <ScheduleItem start="9:30 PM" end="10:00 PM">Cow Drawing Competition</ScheduleItem>
                     <ScheduleItem start="10:00 PM" end="12:00 AM">Movie Night</ScheduleItem>
                 </ScheduleDay>
