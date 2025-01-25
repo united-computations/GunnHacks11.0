@@ -83,13 +83,13 @@ export default function Heading() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Register Here
+                  Click here for late registration
                 </a>
                 <span className="text-[#F47722] text-5xl">]</span> 
-                <span className="text-5xl animate-wiggle ml-2">👈</span>
+                <span className="text-3xl animate-wiggle ml-2">👈</span>
             </div>
             <div className="text-sm italic mt-2 flex gap-2 items-center"> 
-                <span>Limited T-shirts granted on first-come-first-serve basis! Sign up as soon as possible to guarantee your swag!</span> 
+                <span>Haven't signed up yet? It's never too late!</span> 
             </div>
 
             <style jsx>{`
