@@ -6,5 +6,5 @@ export const metadata: Metadata = {
 }
 
 export default function Guide() {
-    redirect("https://docs.google.com/forms/d/e/1FAIpQLSdcrbFGzyozJNdJai8ufFFnXby0Jgi8kv41dfFhCmQertyUog/viewform?usp=sf_link");
+    redirect("https://forms.gle/MvuqryanBg1629UF7");
 }
