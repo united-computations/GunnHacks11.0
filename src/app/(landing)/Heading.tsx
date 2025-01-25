@@ -83,7 +83,7 @@ export default function Heading() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Click here for late registration
+                  Click here to register
                 </a>
                 <span className="text-[#F47722] text-5xl">]</span> 
                 <span className="text-3xl animate-wiggle ml-2">👈</span>
