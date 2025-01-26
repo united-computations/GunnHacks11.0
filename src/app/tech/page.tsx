@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 
 export const metadata: Metadata = {
-    title: 'Team Selection Form | GunnHaX'
+    title: 'Team Selection Form | GunnHacks'
 }
 
 export default function Guide() {
