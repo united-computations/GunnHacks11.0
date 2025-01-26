@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 
 export const metadata: Metadata = {
-    title: 'Code of Conduct | GunnHaXI'
+    title: 'Code of Conduct | GunnHacks'
 }
 
 export default function Register() {
