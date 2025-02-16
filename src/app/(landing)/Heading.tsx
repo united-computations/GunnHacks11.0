@@ -72,7 +72,7 @@ export default function Heading() {
                         ? `The hacking period will start in ${msToTime(START - time)}.`
                         : time < END
                         ? `The hacking period has started and will end in ${msToTime(END - time)}.`
-                        : `The hacking period has ended.`
+                        : `The hacking period has ended. View the results <a target="_blank" rel="noopener noreferrer" href='https://gunnhacks11.devpost.com/' aria-label="Devpost">here</a>.`
                     : `Loading...`}
             </div>
             {/*<div className="text-4xl font-bold mt-3 flex gap-2 items-center">
