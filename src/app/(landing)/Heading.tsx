@@ -75,7 +75,7 @@ export default function Heading() {
                         : `The hacking period has ended.`
                     : `Loading...`}
             </div>
-            <div className="text-4xl font-bold mt-3 flex gap-2 items-center">
+            {/*<div className="text-4xl font-bold mt-3 flex gap-2 items-center">
                 <span className="text-[#F47722] text-5xl">[</span>
                 <a
                   id="register-link"
@@ -90,7 +90,7 @@ export default function Heading() {
             </div>
             <div className="text-sm italic mt-2 flex gap-2 items-center"> 
                 <span>Haven't signed up yet? It's never too late!</span> 
-            </div>
+            </div>*/}
 
             <style jsx>{`
 
