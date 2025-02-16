@@ -67,14 +67,30 @@ export default function Heading() {
                 </div>
             </div>
             <div className="mt-7 px-16 py-4 text-2xl font-bold">
-                {time !== null
-                    ? time < START
-                        ? `The hacking period will start in ${msToTime(START - time)}.`
-                        : time < END
-                        ? `The hacking period has started and will end in ${msToTime(END - time)}.`
-                        : `The hacking period has ended. View the results <a target="_blank" rel="noopener noreferrer" href='https://gunnhacks11.devpost.com/' aria-label="Devpost">here</a>.`
-                    : `Loading...`}
+                {time !== null ? (
+                    time < START ? (
+                        `The hacking period will start in ${msToTime(START - time)}.`
+                    ) : time < END ? (
+                        `The hacking period has started and will end in ${msToTime(END - time)}.`
+                    ) : (
+                        <>
+                            The hacking period has ended. View the results{" "}
+                            <a 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                href="https://gunnhacks11.devpost.com/" 
+                                aria-label="Devpost"
+                                className="text-blue-500 underline"
+                            >
+                                here
+                            </a>.
+                        </>
+                    )
+                ) : (
+                    "Loading..."
+                )}
             </div>
+
             {/*<div className="text-4xl font-bold mt-3 flex gap-2 items-center">
                 <span className="text-[#F47722] text-5xl">[</span>
                 <a
